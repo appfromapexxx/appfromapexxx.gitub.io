@@ -1,0 +1,73 @@
+baseURL = 'https://appfromapexxx.github.io/'
+languageCode = 'zh-tw'
+title = '程式猿 AFA 的技術筆記'
+theme = "PaperMod"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  # 基本顯示設定
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  DateFormat = "2006-01-02"
+
+  # 首頁上方資訊卡（Home Info）
+  [params.homeInfoParams]
+    Title = "AFA 的技術筆記"
+    Content = """
+這裡是 appfromape（AFA） 的官方技術筆記。
+
+主題圍繞：
+• AI 工具實戰與工作流
+• Vibe Coding 開發實驗
+• Apple 生態系（Mac / iPad / iPhone）
+• YouTube 創作者的實務筆記
+"""
+
+  # 社群連結（圖示會出現在首頁資訊卡下方）
+  [[params.socialIcons]]
+    name = "GitHub"
+    url  = "https://github.com/appfromapexxx"
+
+  # 請把下面這個換成你的 YouTube 頻道網址
+  [[params.socialIcons]]
+    name = "Youtube"
+    url  = "https://www.youtube.com/@appfromape"
+
+  # 如果之後有 Telegram / Threads 等，可以再往下加
+  # [[params.socialIcons]]
+  #   name = "Threads"
+  #   url  = "https://www.threads.com/@appfromape"
+
+[menu]
+  [[menu.main]]
+    name = "最新文章"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "AI 工具"
+    url = "/tags/ai-工具/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Vibe Coding"
+    url = "/tags/vibe-coding/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Apple 生態系"
+    url = "/tags/apple-生態系/"
+    weight = 4
+
+  [[menu.main]]
+    name = "關於我"
+    url = "/about/"
+    weight = 5
